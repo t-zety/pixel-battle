@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  background: #15152b;
+  color: #fff3d6;
+  font-family: monospace;
+}
+
+h1 {
+  color: #65f5e3;
+  text-shadow: 3px 3px #a04478;
+  letter-spacing: 3px;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+  color: #ffd166;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background: #292447;
+  border: 4px solid #65f5e3;
+  image-rendering: pixelated;
+}
+
+#startScreen {
+  padding: 15px;
+  background: #292447;
+  border: 2px solid #ffd166;
+}
+
+button {
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#startScreen button {
+  padding: 12px 20px;
+  color: #15152b;
+  background: #65f5e3;
+  border: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.controls button {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 3px solid #fff3d6;
+  background: #393655;
+  color: white;
+  font-size: 22px;
+  box-shadow: 0 4px #74628e;
+}
+
+#jump { background: #397d91; }
+#fight { background: #a04478; }
+#shoot { background: #94702f; }
+
+.controls button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.legend {
+  color: #a6abc8;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
